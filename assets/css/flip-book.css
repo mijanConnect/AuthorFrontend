@@ -1,0 +1,152 @@
+.book {
+    margin: auto;
+    position: relative;
+    height: 350px;
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 450px;
+}
+
+@media screen and (max-width: 1150px) {
+    .book {
+        height: 300px;
+        max-width: 900px;
+        margin-top: 50px;
+        margin-bottom: 350px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .book {
+        height: 150px;
+        max-width: 400px;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+}
+
+.page {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200%;
+}
+
+.page-img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.page-layer {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: 0;
+    margin-left: 6px;
+}
+
+.btn-next {
+    right: 0;
+    margin-right: 6px;
+}
+
+.img-layer-right {
+    right: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 3%);
+}
+
+.img-layer-left {
+    left: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0) 97%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.default-position {
+    transform: rotateY(0deg);
+}
+
+.rotate-next {
+    transform: rotateY(-180deg);
+}
+
+.rotate-prev {
+    transform: rotateY(180deg);
+}
+
+.right-img {
+    perspective: 1000px;
+    transform-origin: left center;
+    transition: transform 0.5s;
+}
+
+.left-img {
+    perspective: 1000px;
+    transform-origin: right center;
+    transition: transform 0.5s;
+}
+
+.left-cover {
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 24px;
+    color: white;
+}
+
+.text:hover {
+    cursor: pointer;
+}
+
+.right-cover {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+}
+
+.back-cover {
+    background-color: black;
+}
+
+.btn-prev-last {
+    border: 1px solid white;
+}
+
+.btn-prev-last a {
+    color: white;
+    text-decoration: none;
+}

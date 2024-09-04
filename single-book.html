@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/single-book.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@400&display=swap" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/hero-2.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/single-book-2.css">
+</head>
+
+<body>
+    <!-- ================ Navbar ================ -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item author-list">
+                    <a href="./index.html" class="nav-link author-anchor">HOME</a>
+                </li>
+                <li class="nav-item author-list">
+                    <a href="./books.html" class="nav-link author-anchor">BOOKS</a>
+                </li>
+                <li class="nav-item author-list">
+                    <a href="./blog.html" class="nav-link author-anchor">BLOG</a>
+                </li>
+                <li class="nav-item author-list">
+                    <a href="./store.html" class="nav-link author-anchor">STORE</a>
+                </li>
+                <li class="nav-item author-list">
+                    <a href="./appointment.html" class="nav-link author-anchor">Appointment</a>
+                </li>
+            </ul>
+            <div class="author-nav-button">
+                <a href="./contact-us.html" class="contact-button">
+                    <i class="fa fa-cart-arrow-down"></i>
+                </a>
+                <a href="./contact-us.html" class="contact-button">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="./contact-us.html" class="contact-button contact-button-mobile ">CONTACT US</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================ Hero-2 ================ -->
+    <div class="author-hero-2">
+        <div class="author-hero-2-underline author-hero-2-underline-single-book">
+            <h1 class="author-hero-2-heading">BOOK STORE</h1>
+        </div>
+
+        <div class="author-hero-2-tab">
+            <p>Home</p>
+            <!-- <i class="fa fa-bars"></i> -->
+            <img src="/public/Symbol.svg" alt="">
+            <p>Book Store</p>
+        </div>
+    </div>
+
+    <!-- ================ Single book view ================ -->
+    <section class="single-book-view-container">
+        <div class="single-book-img">
+            <img src="./assets/img/single-book/single-book.png" alt="book">
+        </div>
+        <div class="single-book-description">
+            <h1>Dare To Be Wealthy</h1>
+            <h2>$30<span>.00 USD</span></h2>
+            <p>Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,
+                combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                The generated Lorem Ipsum.</p>
+            <table>
+                <tr>
+                    <td>Author</td>
+                    <td>:</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>:</td>
+                    <td>Business</td>
+                </tr>
+                <tr>
+                    <td>ISBN</td>
+                    <td>:</td>
+                    <td>978-3-16-148410-0</td>
+                </tr>
+                <tr>
+                    <td>Pages</td>
+                    <td>:</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Published</td>
+                    <td>:</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+            <a href="./contact-us.html" class="hero-learn-more">Add to Cart</a>
+        </div>
+        <div class="single-book-audio-container">
+            <div class="single-book-audio-list">
+                <div class="audio-check-container">
+                    <input type='radio' id='male' checked='checked' name='radio' class="audio-input">
+                    <label for='male' class="audio-input">
+                        <div class="single-book-audio-single-list">
+                            <h1 class="single-book-audio-single-list-package">Kindle</h1>
+                            <div class="single-book-audio-price">
+                                <h2>$0.00</h2>
+                                <p>Kindle<span>Unlimited</span></p>
+                            </div>
+                            <h2>or <span>$3.99</span> to buy</h2>
+                        </div>
+                    </label>
+                    <input type='radio' id='female' name='radio'>
+                    <label for='female'>
+                        <div class="single-book-audio-single-list">
+                            <h1 class="single-book-audio-single-list-package">Kindle</h1>
+                            <div class="single-book-audio-price">
+                                <h2>$0.00</h2>
+                                <p>Kindle<span>Unlimited</span></p>
+                            </div>
+                            <h2>or <span>$3.99</span> to buy</h2>
+                        </div>
+                    </label>
+                    <input type='radio' id='female2' name='radio'>
+                    <label for='female2'>
+                        <div class="single-book-audio-single-list">
+                            <h1 class="single-book-audio-single-list-package">Kindle</h1>
+                            <div class="single-book-audio-price">
+                                <h2>$0.00</h2>
+                                <p>Kindle<span>Unlimited</span></p>
+                            </div>
+                            <h2>or <span>$3.99</span> to buy</h2>
+                        </div>
+                    </label>
+                    <input type='radio' id='female3' name='radio'>
+                    <label for='female3'>
+                        <div class="single-book-audio-single-list">
+                            <h1 class="single-book-audio-single-list-package">Kindle</h1>
+                            <div class="single-book-audio-price">
+                                <h2>$0.00</h2>
+                                <p>Kindle<span>Unlimited</span></p>
+                            </div>
+                            <h2>or <span>$3.99</span> to buy</h2>
+                        </div>
+                    </label>
+                </div>
+                <p>Other Used, New, Collectible from $2.90</p>
+                <button class="hero-learn-more hero-learn-more-buy">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ Info buttons ================ -->
+    <section class="info-button">
+        <button id="videoBtnSingleBook" class="hero-learn-more hero-learn-more-info">Product Description</button>
+        <div id="myModalVideoSingleBook" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video class="video-button-home-player" controls>
+                    <source src="./assets/videos/video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <button class="hero-learn-more hero-learn-more-info">Additional info</button>
+    </section>
+
+    <!-- ================ Descriptions ================ -->
+    <section class="single-book-description-bottom">
+        <div class="single-book-description-left">
+            <h1>Do you offer discounts?</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form, bypassed injected humour, or randomised words which don't look even slightly believable.
+            </p>
+        </div>
+        <div class="single-book-description-left">
+            <h1>Is this book for me?</h1>
+            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                chunks as necessary.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <div class="features">
+        <section class="background2">
+            <div class="background3"></div>
+            <div class="content7">
+                <div class="div6">
+                    <div class="inner">
+                        <div class="rectangle-parent">
+                            <div class="frame-child"></div>
+                            <img class="icon" loading="lazy" alt="" src="./images/icon.svg" />
+                        </div>
+                    </div>
+                    <div class="frame-parent5">
+                        <div class="secure-payments-wrapper">
+                            <b class="secure-payments">Secure Payments</b>
+                        </div>
+                        <div class="there-are-many1">
+                            There are many variations of passages of alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="div7">
+                    <div class="child">
+                        <div class="rectangle-group">
+                            <div class="frame-item"></div>
+                            <img class="icon1" loading="lazy" alt="" src="./images/icon-1.svg" />
+                        </div>
+                    </div>
+                    <div class="frame-parent6">
+                        <div class="free-shipping-wrapper">
+                            <b class="free-shipping">Free Shipping</b>
+                        </div>
+                        <div class="there-are-many2">
+                            There are many variations of passages of alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="div8">
+                    <div class="inner1">
+                        <div class="rectangle-container">
+                            <div class="frame-inner"></div>
+                            <img class="icon2" loading="lazy" alt="" src="./images/icon-2.svg" />
+                        </div>
+                    </div>
+                    <div class="frame-parent7">
+                        <div class="satisfactions-wrapper">
+                            <div class="satisfactions">100% Satisfactions</div>
+                        </div>
+                        <div class="there-are-many3">
+                            There are many variations of passages of alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================ Footer ================ -->
+    <footer class="author-site-footer">
+        <section class="author-footer">
+            <div class="footer-left">
+                <a href="./index.html"><img src="./images/footer-logo.png" alt="logo"></a>
+                <h1>Digital World E -book</h1>
+                <div class="footer-social">
+                    <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-amazon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <h1>QUICK LINKS</h1>
+                <a href="./index.html">Home</a>
+                <a href="./books.html">Books</a>
+                <a href="./blog.html">Blogs</a>
+                <a href="./store.html">Store</a>
+                <a href="./contact-us.html">Contact</a>
+            </div>
+            <div class="footer-right">
+                <h1>CONTACT</h1>
+                <a href="#"> Sign Up</a>
+                <div class="footer-mail">
+                    <i class="fa fa-envelope"></i>
+                    <a href="./contact-us.html">Email digital world</a>
+                </div>
+                <div class="footer-booking">
+                    <i class="fa fa-calendar"></i>
+                    <a href="./contact-us.html">Book For A Speaking Event</a>
+                </div>
+            </div>
+        </section>
+        <section class="author-copyright">
+            <p>Digital world Copyright © 2024</p>
+            <p>Author Website Design by Asia Ikhtiar</p>
+        </section>
+    </footer>
+
+    <!-- Video-modal -->
+    <script>
+        //  Product description Single book
+        var modalsingle = document.getElementById("myModalVideoSingleBook");
+        var spansingle = document.getElementsByClassName("close")[0];
+
+        var btnsingle = document.getElementById("videoBtnSingleBook");
+
+        btnsingle.onclick = function () {
+            modalsingle.style.display = "block";
+        }
+
+        spansingle.onclick = function () {
+            modalsingle.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modalsingle) {
+                modalsingle.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Header -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        // when we click on hamburger icon its close 
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.mfp-hide {
+    display: none !important;
+}
+
+.button {
+    color: var(--color-primary-buttons) !important;
+    text-transform: uppercase;
+    border: 2px solid var(--color-primary-buttons) !important;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .15s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.video-button-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+
+.button {
+    border: 2px solid var(--color-primary-buttons);
+    color: var(--color-primary-buttons);
+    text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+}
+
+.button .fa {
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: var(--color-gray);
+}
+
+span {
+    font-size: 23px;
+    font-size: 2.3rem;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.content {
+    text-align: center;
+    z-index: 5;
+}
+
+.videos-btn-parent {
+    align-items: center !important;
+}
+
+/* Videos */
+.author-video-watch{
+    z-index: 99999;
+}
+
+.author-video-watch h3{
+    cursor: pointer;
+}
+
+.author-video-player{
+    width: 100%;
+    height: auto;
+}
+
+.w3-container, .w3-panel {
+    padding: 100px !important;
+}

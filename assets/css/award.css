@@ -1,0 +1,106 @@
+/* award video */
+.about-me-award-video {
+    background-color: var(--color-white);
+}
+
+.about-award-winning-video {
+    position: relative;
+}
+
+.about-award-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.about-award-video-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.about-me-award-video-link {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.award-youtube-link {
+    color: var(--color-primary-buttons);
+    font-size: 19px;
+    font-weight: 700;
+    font-family: var(--paragraph);
+    text-align: center;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+
+.award-youtube-link a {
+    padding-right: 10px;
+}
+
+/* Award about me */
+.award-about-me-container {
+    padding: 100px 5%;
+}
+
+@media screen and (max-width: 800px) {
+    .award-about-me-container {
+        padding: 50px 5%;
+    }
+}
+
+.award-about-me-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.award-about-me-header h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color-for-headings);
+    font-family: var(--heading);
+    text-align: center;
+    margin: 0;
+}
+
+.award-about-me-header h2 {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--primary-color-for-headings);
+    font-family: var(--heading);
+    border-bottom: 5px solid var(--primary-color-for-headings);
+    display: inline-block;
+    margin: 0 0 50px 0;
+}
+
+.award-about-me-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .award-about-me-image {
+        flex-direction: column;
+    }
+}
+
+.award-about-me-image-one {
+    width: 100%;
+    height: auto;
+}
+
+.award-about-me-image-one img {
+    width: 100%;
+    height: auto;
+}
+
+.award-button-play{
+    cursor: pointer;
+}

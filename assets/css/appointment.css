@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formbold-mb-5 {
+    margin-bottom: 20px;
+}
+
+.formbold-pt-3 {
+    padding-top: 12px;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 890px;
+    width: 100%;
+    background: var(--color-white);
+}
+
+.formbold-form-label {
+    font-family: "Lato";
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary-color-for-headings);
+    margin-bottom: 12px;
+}
+
+.formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color-for-headings);
+    background: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-paragraph);
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input:focus {
+    outline: none;
+}
+
+.formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: var(--color-primary-buttons);
+    color: var(--color-white);
+    float: inline-end;
+    cursor: pointer;
+}
+
+.formbold-btn:hover {
+    background-color: var(--color-primary-buttons-hover);
+}
+
+.formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media (min-width: 540px) {
+    .sm\:w-half {
+        width: 50%;
+    }
+}
+
+.author-appointment-form {
+    background-color: #ECF0F1;
+    padding: 50px 50px 90px 50px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.author-appointment-form-header {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-color-for-headings);
+}
+
+.author-appointment-form-paragraph {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.author-textarea {
+    height: 134px;
+}
+
+.author-phone-placeholder {
+    padding: 12px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+}
+
+.author-phone-select {
+    border: none;
+    width: 18%;
+    font-size: 16px;
+}
+
+.formbold-form-input-author {
+    color: #6b7280;
+    resize: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}

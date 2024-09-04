@@ -1,0 +1,58 @@
+*{
+    font-family: "Lato";
+}
+
+.formbold-form-wrapper-login {
+    max-width: 400px;
+}
+
+.formbold-btn-login {
+    width: 100%;
+    background-color: #F39C12;
+}
+
+.login-passs-show-containeer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.login-ashow-pass {
+    margin-right: 5px;
+}
+
+.author-appointment-form-header-login {
+    font-family: "Lato";
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.author-appointment-form-paragraph-login {
+    text-align: center;
+    margin-top: 90PX;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.author-appointment-form-paragraph-signup {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.author-appointment-form-paragraph-signup:hover {
+    color: #F39C12;
+}
+
+.signup-link {
+    text-decoration: none;
+}
+
+.author-appointment-form-login {
+    padding: 50px;
+}

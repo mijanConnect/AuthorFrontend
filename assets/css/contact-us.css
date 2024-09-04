@@ -1,0 +1,129 @@
+.author-contact-us-containeer {
+    padding: 100px 5%;
+    background-color: var(--color-gray);
+    margin: 0;
+}
+
+.contact-us-map {
+    background-color: var(--color-gray);
+}
+
+.author-contact-us-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.author-contact-us-left h1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color-for-headings);
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.author-contact-us-left h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary-color-for-headings);
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color-for-headings);
+    border-bottom: 1px solid var(--primary-color-for-headings);
+    margin: 0;
+    padding: 20px 0;
+}
+
+.author-contact-us-right {
+    background-color: var(--color-white);
+    padding: 80px 70px;
+    border-radius: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DADBD6 !important;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.contact-us-social {
+    margin-top: 20px;
+}
+
+.contact-us-social a {
+    color: var(--color-white);
+    background-color: var(--color-primary-buttons);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.contact-us-social a:hover {
+    background-color: var(--color-primary-buttons-hover);
+}
+
+.author-contact-us-right button {
+    background-color: var(--color-primary-buttons);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.comments-p {
+    padding: 10px 0;
+}
+
+.author-contact-us-right button:hover {
+    background-color: var(--color-primary-buttons-hover);
+}
+
+@media screen and (max-width: 850px) {
+    .author-contact-us-containeer {
+        display: flex;
+        flex-direction: column !important;
+        padding: 50px 5%;
+    }
+
+    .author-contact-us-left {
+        width: 100%;
+    }
+
+    .author-contact-us-right {
+        width: 100%;
+        padding: 50px 30px;
+        margin-top: 40px;
+    }
+
+    .first-line {
+        display: flex;
+        flex-direction: column;
+    }
+}

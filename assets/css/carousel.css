@@ -1,0 +1,151 @@
+.author-carousel {
+    background-color: var(--color-gray);
+    padding: 100px 5% 110px 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .author-carousel {
+        padding: 50px 5%;
+    }
+}
+
+.author-carousel h1 {
+    font-family: var(--heading);
+    color: var(--primary-color-for-headings);
+    font-size: 25px;
+    margin: 0;
+}
+
+.author-carousel h2 {
+    font-family: var(--heading);
+    border-bottom: 5px solid var(--primary-color-for-headings);
+    color: var(--primary-color-for-headings);
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.carousel-containeer {
+    background-color: var(--color-white);
+    padding: 50px;
+    border-radius: 30px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.carousel-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-review-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carousel-review-author img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.carousel-review-author-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-review-author-description h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color-for-headings);
+}
+
+.carousel-review-author-description p {
+    margin: 0;
+    padding: 0;
+}
+
+.w3-red,
+.w3-hover-red:hover {
+    color: var(--color-white) !important;
+    background-color: var(--primary-color-for-headings) !important;
+}
+
+.review-rating {
+    color: var(--primary-color-for-headings);
+}
+
+.carousel-main-content p {
+    font-family: var(--paragraph);
+    color: var(--color-paragraph);
+}
+
+/* Pagination custom */
+.swiper-pagination-fraction {
+    bottom: unset !important;
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--primary-color-for-headings);
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+/* last */
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 60%;
+}

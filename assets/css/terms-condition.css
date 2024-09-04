@@ -1,0 +1,36 @@
+.autor-terms-condition {
+    padding: 50px 5%;
+}
+
+.autor-terms-condition h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 600;
+}
+
+.autor-terms-condition h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.autor-terms-condition p {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.autor-terms-condition ul {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.autor-terms-condition li {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    padding: 5px 0;
+}

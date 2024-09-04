@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Brands:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public Sans:wght@400&display=swap" />
+
+    <link rel="stylesheet" href="./assets/css/appointment.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+</head>
+
+<body>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper formbold-form-wrapper-login">
+            <form action="https://formbold.com/s/FORM_ID" class="author-appointment-form author-appointment-form-login"
+                method="POST">
+                <h1 class="author-appointment-form-header author-appointment-form-header-login">Sign Up</h1>
+                <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-full formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="name" class="formbold-form-label"> Full Name </label>
+                            <input type="text" name="name" id="name" placeholder="eg: John Doe"
+                                class="formbold-form-input" />
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-full formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="email" class="formbold-form-label"> Email </label>
+                            <input type="email" name="email" id="email" placeholder="eg: john@email.com"
+                                class="formbold-form-input" />
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-full formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="password" class="formbold-form-label"> Password </label>
+                            <input type="password" name="password" id="myInput" placeholder="eg: john@email.com"
+                                minlength="8" class="formbold-form-input" />
+                            <div class="login-passs-show-containeer">
+                                <input type="checkbox" onclick="myFunction()" class="login-ashow-pass">
+                                <p>Show Password</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="formbold-btn formbold-btn-login">Sign Up</button>
+                </div>
+                <p class="author-appointment-form-paragraph-login">Have an account?</p>
+                <a href="./login.html" class="signup-link">
+                    <h3 class="author-appointment-form-paragraph-signup">Login</h3>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

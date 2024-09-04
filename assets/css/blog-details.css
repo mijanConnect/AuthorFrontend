@@ -1,0 +1,238 @@
+.blog-details-img {
+    margin: 0;
+    position: relative;
+    padding-bottom: 300px;
+    background-color: var(--color-gray);
+}
+
+.blog-details-img img {
+    width: 100%;
+}
+
+.blog-details-parent {
+    margin-top: -100px;
+    position: absolute;
+    padding: 0 10%;
+}
+
+.feb-23-2024 {
+    width: 90px;
+    position: relative;
+    line-height: 21px;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 90px;
+}
+
+.date-container {
+    background-color: var(--color-primary-buttons);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) var(--padding-11xl);
+    white-space: nowrap;
+}
+
+.sample-post-with {
+    width: 307px;
+    position: relative;
+    font-size: var(--tittle-size);
+    letter-spacing: -0.02em;
+    line-height: 29px;
+    display: inline-block;
+    font-family: var(--heading);
+    color: var(--footer-and-secondary-headings);
+    text-align: left;
+}
+
+.the-point-of1 {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 180%;
+    font-family: var(--paragraph);
+}
+
+.inprivate-account-undefined {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.privacy-indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+}
+
+.publisher1 {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 180%;
+    display: inline-block;
+    min-width: 78px;
+}
+
+.account-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    align-items: center;
+}
+
+.eye-undefined {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.eye-undefined-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+}
+
+.view {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 180%;
+    display: inline-block;
+    min-width: 76px;
+}
+
+.account-actions1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    align-items: center;
+}
+
+.comment-undefined {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.comment-undefined-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+}
+
+.leave-comment {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 180%;
+    display: inline-block;
+    min-width: 129px;
+}
+
+.account-actions2 {
+    flex-direction: row;
+    gap: var(--gap-5xs);
+    align-items: center !important;
+}
+
+.account-actions2,
+.blog-details,
+.interaction-buttons,
+.post-excerpt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.interaction-buttons {
+    flex-direction: row;
+    gap: var(--gap-xl);
+    max-width: 100%;
+}
+
+.blog-details,
+.post-excerpt {
+    flex-direction: column;
+    font-family: var(--paragraph-1);
+}
+
+.post-excerpt {
+    align-self: stretch;
+    gap: var(--gap-5xs);
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--description-size);
+    color: var(--color-paragraph);
+}
+
+.blog-details {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    box-sizing: border-box;
+    gap: var(--gap-11xl);
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-gray);
+    padding: 40px 60px;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-details {
+        gap: var(--gap-mini);
+        padding-left: var(--padding-12xl);
+        padding-right: var(--padding-12xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sample-post-with {
+        font-size: var(--description-size);
+        line-height: 23px;
+    }
+
+    .interaction-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-details{
+        padding: 35px;
+    }
+
+    .blog-details-parent{
+        padding: 0;
+    }
+
+    .blog-details-img{
+        padding-bottom: 350px;
+    }
+
+    .date-container{
+        margin-bottom: 20px;
+    }
+
+    .sample-post-with{
+        margin-bottom: 20px;
+    }
+}

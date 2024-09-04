@@ -1,0 +1,41 @@
+.author-hero-2 {
+    /* background-color: var(--primary-color-for-headings); */
+    background: url(../img/home/hero-2.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 120px 0 70px 0;
+    position: relative;
+}
+
+.author-hero-2-underline {
+    border-bottom: 5px solid var(--color-white);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.author-hero-2-underline h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display";
+    font-size: 60px;
+    line-height: 1;
+}
+
+.author-hero-2-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.author-hero-2-tab p {
+    margin: 0 !important;
+}
+
+.author-hero-2-tab i {
+    color: var(--color-primary-buttons);
+}

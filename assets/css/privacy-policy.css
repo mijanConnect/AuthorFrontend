@@ -1,0 +1,15 @@
+.autor-privacy-policy{
+    padding: 50px 5%;
+}
+
+.autor-privacy-policy h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.autor-privacy-policy p{
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
