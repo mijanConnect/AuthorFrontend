@@ -5,13 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 5%;
-}
-
-@media screen and (max-width: 1000px) {
-    .author-award-container {
-        padding: 50px 5%;
-    }
+    padding: 100px 0;
 }
 
 .award-description {
@@ -38,7 +32,8 @@
     font-family: var(--heading);
     border-bottom: 5px solid var(--footer-and-secondary-headings);
     display: inline-block;
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 22px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -51,6 +46,7 @@
     font-size: 20px;
     color: var(--color-paragraph);
     font-family: var(--paragraph);
+    margin-bottom: 47px;
 }
 
 .swiper-wrapper-awards {

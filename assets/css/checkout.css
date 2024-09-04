@@ -1,10 +1,17 @@
 .checkout-containeer-boot {
-    padding: 50px 5%;
+    padding: 50px 0;
     background-color: var(--color-white);
 }
 
-.checkout-containeer-boot h1,
-h2 {
+.checkout-containeer-boot h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color-for-headings);
+    margin-bottom: 25px;
+    padding-top: 15px;
+}
+
+.checkout-containeer-boot h2 {
     font-size: 26px;
     font-weight: 700;
     color: var(--primary-color-for-headings);
@@ -54,8 +61,8 @@ textarea:focus {
 }
 
 .form-label {
-    font-weight: 600;
     color: var(--primary-color-for-headings);
+    font-family: var(--paragraph);
 }
 
 /* Your Order */
@@ -105,12 +112,11 @@ textarea:focus {
     color: var(--color-white);
     border: none;
     padding: 12px;
-    border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .checkout-containeer-boot button:hover {

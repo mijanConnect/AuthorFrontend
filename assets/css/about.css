@@ -1,11 +1,20 @@
 /* About */
-.about-me-top {
-    padding: 0 0 50px 0;
-    background-color: var(--color-gray);
+.about-me-container-top {
+    background-color: var(--color-white);
 }
 
-.about-me-container {
-    background-color: var(--color-gray);
+.about-me-top {
+    padding: 85px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-me-top {
+        padding: 50px 0 0 0;
+    }
+
+    .about-me-description p {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -13,10 +22,12 @@
         flex-direction: column;
         gap: 20px;
     }
+}
 
-    .about-me-top {
-        padding: 0 5%;
-    }
+.about-me-count {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Award Wining */
@@ -25,20 +36,25 @@
 }
 
 .about-awards-winning-first {
-    padding: 100px 5%;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 45px;
     align-items: center;
+    margin-bottom: 85px;
 }
 
-.about-awards-winning-left {
-    width: 50%;
+@media screen and (max-width: 1000px) {
+    .about-awards-winning-first {
+        flex-direction: column;
+        gap: 45px;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
 }
 
 .about-awards-winning-left h1 {
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 48px;
+    font-weight: 700;
     color: var(--primary-color-for-headings);
     font-family: var(--heading);
     margin: 0;
@@ -47,12 +63,21 @@
 
 .about-awards-winning-left h2 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     font-family: var(--heading);
     color: var(--primary-color-for-headings);
     display: inline-block;
-    margin: 0;
-    padding: 20px 0px;
+    border-bottom: 5px solid var(--primary-color-for-headings);
+    margin-top: 27px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-awards-winning-left h2 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
 }
 
 .about-awards-winning-left p {
@@ -63,7 +88,6 @@
 }
 
 .about-awards-winning-right {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +107,7 @@
     .about-awards-winning-first {
         flex-direction: column;
         gap: 5px;
-        padding: 50px 5%
+        padding: 50px 0 0 0;
     }
 
     .about-awards-winning-left {
@@ -144,21 +168,30 @@
 
 .about-awards-winning p {
     font-size: 20px;
-    color: #969AA0;
+    color: var(--paragraph);
     font-family: var(--paragraph);
+    line-height: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .award-winnig-bottom {
-    padding: 0 5% 50px 5%;
+    padding: 0 0 50px 0;
 }
 
 /* about slider */
 .about-slider h4 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color-for-headings);
     font-family: var(--heading);
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-slider h4 {
+        margin-bottom: 20px;
+    }
 }
 
 .swiper-slide img {
@@ -168,7 +201,7 @@
 
 .swiper-slide h3 {
     font-size: 19px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color-for-headings);
     font-family: var(--paragraph);
     margin-top: 20px;

@@ -1,9 +1,13 @@
+.author-blog-container-top {
+    background-color: var(--color-gray);
+}
+
 .author-video-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 100px 5%;
+    padding: 100px 0;
 }
 
 .author-video-container {

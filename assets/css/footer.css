@@ -1,9 +1,21 @@
+.author-site-footer {
+    background-color: var(--footer-and-secondary-headings);
+    margin: 0;
+    padding: 0;
+}
+
+.autho-copyright {
+    background-color: var(--primary-color-for-headings);
+    margin: 0;
+    padding: 0;
+}
+
 .author-footer {
     background-color: var(--footer-and-secondary-headings);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 5%;
+    padding: 60px 0;
     color: var(--color-white);
 }
 
@@ -11,9 +23,8 @@
     .author-footer {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 35px;
     }
-
 }
 
 .footer-left {
@@ -65,15 +76,16 @@
     text-decoration: none;
     color: var(--color-white);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .footer-middle a {
     font-family: var(--paragraph);
     text-decoration: none;
     color: var(--color-white);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .footer-middle a:hover {
@@ -87,13 +99,13 @@
     gap: 20px;
 }
 
-
 .footer-right h1 {
     font-family: var(--font-oswald);
     text-decoration: none;
     color: var(--color-white);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .footer-right i {
@@ -103,24 +115,23 @@
 }
 
 .footer-right a {
-    font-family: var(--paragraph);
+    font-family: var(--paragraph) !important;
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-white) !important;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .footer-right a:hover {
-    color: var(--color-primary-buttons-hover);
+    color: var(--color-primary-buttons-hover) !important;
     transition: 0.5s;
 }
 
 .author-copyright {
-    background-color: var(--primary-color-for-headings);
     display: flex;
     justify-content: space-between;
-    padding: 25px 10%;
+    padding: 25px 5%;
     color: var(--color-white);
     font-family: "Playfair Display";
     font-weight: 200;
@@ -135,7 +146,6 @@
         justify-content: center;
         margin: 0;
     }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -144,7 +154,6 @@
         padding: 10px;
         text-align: center;
     }
-
 }
 
 .footer-modal-button {

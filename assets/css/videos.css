@@ -46,13 +46,6 @@ span {
     line-height: 25px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-}
-
 .content {
     text-align: center;
     z-index: 5;

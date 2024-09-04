@@ -1,5 +1,5 @@
 .single-book-view-container {
-    padding: 100px 5%;
+    padding: 100px 0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 40px;
@@ -22,16 +22,11 @@
 
 @media screen and (max-width: 650px) {
     .single-book-view-container {
-        padding: 50px 5%;
+        padding: 50px 0;
         grid-template-columns: 1fr;
         column-gap: 40px;
         row-gap: 40px;
     }
-}
-
-.single-book-img {
-    margin-right: 40px;
-    column-gap: 20px;
 }
 
 .single-book-img img {
@@ -57,6 +52,8 @@
     font-family: var(--paragraph);
     margin: 10px 0 0 0;
     padding: 0;
+    display: flex;
+    align-items: baseline;
 }
 
 .single-book-description h2 span {
@@ -142,7 +139,7 @@
 
 /* Descriptions */
 .single-book-description-bottom {
-    padding: 50px 5%;
+    padding: 50px 0;
     display: flex;
     flex-direction: row;
     gap: 60px;
@@ -449,6 +446,10 @@
     box-sizing: border-box;
 }
 
+.author-single-book-features{
+    background-color: var(--footer-and-secondary-headings);
+}
+
 .background2 {
     flex: 1;
     background-color: var(--footer-and-secondary-headings);
@@ -597,10 +598,13 @@ input[type="radio"]+label {
     color: var(--primary-color-for-headings) !important;
     margin: 0 !important;
     padding: 0 !important;
+    display: flex;
+    align-items: center;
 }
 
-.single-book-audio-price p span {
+.single-book-price-span {
     color: var(--color-paragraph) !important;
+    font-size: 12px;
 }
 
 .single-book-audio-price {
@@ -615,6 +619,8 @@ input[type="radio"]+label {
     color: var(--primary-color-for-headings) !important;
     margin: 0 !important;
     padding: 0 5 0 0 !important;
+    display: flex;
+    align-items: center;
 }
 
 .single-book-audio-single-list h2 span {

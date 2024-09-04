@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
 }
 
 .hamburger {
@@ -41,10 +40,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .nav-item {
-    margin-left: 3rem;
+    padding: 0 10px;
 }
 
 .nav-link {
@@ -129,5 +130,6 @@
 
 .contact-button:hover {
     background-color: var(--color-primary-buttons-hover);
+    color: var(--color-white);
     transition: 0.3s;
 }

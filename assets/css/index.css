@@ -32,7 +32,8 @@
 .heading-2 {
     text-decoration: none;
     line-height: 39px;
-    padding: 0 0 15px 0;
+    padding: 15px 0 0 0;
+    color: var(--primary-color-for-headings);
 }
 
 .horizontalborder {
@@ -624,11 +625,9 @@
 .books-list {
     width: 100%;
     position: relative;
-    background-color: var(--color-gray);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: var(--padding-31xl) var(--padding-3xl) var(--padding-30xl) var(--padding-xl);
     gap: 31.5px;
     line-height: normal;
     letter-spacing: normal;
@@ -636,6 +635,14 @@
     font-size: 50px;
     color: var(--primary-color-for-headings);
     font-family: var(--heading);
+}
+
+.innovation-and-strategy-top {
+    background-color: var(--color-white);
+}
+
+.innovation-and-strategy {
+    padding: 100px 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -1369,9 +1376,10 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1.4;
+    max-height: 600px;
     overflow: scroll;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .content5,
@@ -1390,9 +1398,9 @@
 .div2 {
     background-color: var(--color-white);
     flex-direction: row;
-    padding: var(--padding-22xl) var(--padding-14xl);
+    padding: 20px 30px;
     box-sizing: border-box;
-    min-width: 188px;
+    max-height: 650px;
 }
 
 .b1,
@@ -1503,7 +1511,7 @@
     align-self: stretch;
     flex-direction: row;
     justify-content: center;
-    gap: 99px;
+    gap: 100px;
     max-width: 100%;
     text-align: center;
     font-size: 24px;
@@ -1511,13 +1519,16 @@
     font-family: var(--heading);
 }
 
+.what-will-you-learn-top {
+    background-color: var(--color-gray);
+}
+
 .what-will-you-learn {
     width: 100%;
     position: relative;
-    background-color: #f5f5f5;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 100px 5%;
+    padding: 100px 0;
     box-sizing: border-box;
     gap: 50px;
     line-height: normal;
@@ -1715,24 +1726,6 @@
     max-width: 100%;
 }
 
-.container {
-    width: 1121px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 50px 5%;
-    box-sizing: border-box;
-    gap: 42px;
-    max-width: 100%;
-    text-align: center;
-    font-size: var(--font-size-xl);
-    color: var(--primary-color-for-headings);
-    font-family: var(--font-great-vibes);
-}
-
 .button-icon,
 .button-icon1 {
     height: 20px;
@@ -1802,8 +1795,6 @@
 
 @media screen and (max-width: 1200px) {
     .container {
-        padding-left: var(--padding-24xl);
-        padding-right: var(--padding-24xl);
         box-sizing: border-box;
     }
 }
@@ -1818,8 +1809,6 @@
 @media screen and (max-width: 750px) {
     .container {
         gap: 21px;
-        padding-left: var(--padding-2xl);
-        padding-right: var(--padding-2xl);
         box-sizing: border-box;
     }
 }
@@ -2022,6 +2011,36 @@
     padding: 55px 0px;
 }
 
+.subscribe-author-btn {
+    color: white;
+    padding: 13px;
+}
+
+.subscribe-placeholder {
+    input[type="text"] {
+        padding: 0px 20px;
+    }
+}
+
+.button-subscribe-author {
+    color: var(--color-white) !important;
+    background-color: var(--color-primary-buttons) !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .15s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 50px;
+    border-radius: 4px;
+    font-family: var(--font-paragrap);
+    cursor: pointer;
+}
+
+.button-subscribe-author:hover {
+    background-color: var(--color-primary-buttons-hover) !important;
+}
+
 @media screen and (max-width: 750px) {
     .read-a-free {
         font-size: var(--font-size-19xl);
@@ -2088,20 +2107,20 @@
 
 /* Chapter */
 .book-chapter {
-    padding: 100px 5%;
+    padding: 100px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     background-color: var(--color-white);
 }
 
 @media screen and (max-width: 1000px) {
     .book-chapter {
         flex-direction: column;
-        gap: 10px;
-        padding: 50px 5%;
+        gap: 50px;
+        padding: 50px 0;
     }
 }
 
@@ -2117,26 +2136,27 @@
 
 .book-chapter h1 {
     font-family: var(--heading);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 800;
     color: var(--primary-color-for-headings);
+    margin-bottom: 22px;
 }
 
 .book-chapter p {
     font-size: 20px;
     color: #969AA0;
     font-family: var(--paragraph);
+    line-height: 30px;
 }
 
 /* About Me */
 .about-me-container {
-    padding: 100px 5%;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    background-color: var(--color-gray);
 }
 
 .about-me-count-container-top {
@@ -2154,6 +2174,7 @@
     font-size: 25px;
     font-weight: 400;
     color: var(--primary-color-for-headings);
+    margin-bottom: 25px;
 }
 
 .about-me-description h2 {
@@ -2163,6 +2184,7 @@
     border-bottom: 5px solid var(--primary-color-for-headings);
     display: inline-block;
     margin: 0;
+    line-height: 53px;
 }
 
 @media screen and (max-width: 800px) {
@@ -2177,15 +2199,14 @@
     font-family: var(--paragraph);
     margin-bottom: 50px;
     margin-top: 30px;
+    line-height: 27px;
 }
 
 .about-me-count-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 150px;
     justify-content: space-around;
-    background-color: var(--color-gray);
 }
 
 @media screen and (max-width: 800px) {
@@ -2198,12 +2219,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
 }
 
 .count-top img {
     width: 20px;
     height: 20px;
+    margin-bottom: 15px;
 }
 
 .count-top h3 {
@@ -2230,7 +2252,6 @@
     .about-me-container {
         flex-direction: column;
         gap: 10px;
-        padding: 80px 5% 40px;
     }
 }
 
@@ -2335,14 +2356,14 @@
 
 /* Pricing */
 .author-pricing {
-    padding: 100px 10%;
+    padding: 100px 0;
     text-align: center;
     background-color: var(--color-white);
 }
 
 @media screen and (max-width: 1000px) {
     .author-pricing {
-        padding: 50px 5%;
+        padding: 50px 0;
     }
 }
 
@@ -2461,6 +2482,9 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 .close:hover,
@@ -2471,3 +2495,302 @@
 }
 
 /* Videos modal end */
+
+/* What They Say */
+.author-tey-say {
+    background-color: var(--color-gray);
+}
+
+.author-tey-say-container {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+}
+
+.author-tey-say-left {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.author-tey-say-left h2 {
+    font-family: var(--heading);
+    font-size: 25px;
+    line-height: 33px;
+    color: var(--primary-color-for-headings);
+    font-weight: 500;
+}
+
+.author-tey-say-left h3 {
+    font-family: var(--heading);
+    font-size: 48px;
+    line-height: 39px;
+    color: var(--primary-color-for-headings);
+    font-weight: 500;
+    margin-top: 21px;
+}
+
+.author-tey-say-left p {
+    font-family: var(--paragraph);
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    margin-top: 21px;
+}
+
+.what-say-button {
+    background-color: var(--color-primary-buttons);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: var(--font-oswald) !important;
+    margin-top: 40px;
+}
+
+.what-say-button:hover {
+    background-color: var(--color-primary-buttons-hover);
+    color: var(--color-white);
+}
+
+.what-say-button img {
+    margin-left: 5px;
+    padding-bottom: 4px;
+}
+
+.author-tey-say-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.author-tey-say-item-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: self-start;
+    max-width: 400px;
+}
+
+.author-tey-say-item-left-details {
+    background-color: #F3F5F6;
+    font-family: var(--paragraph);
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    padding: 20px 30px;
+}
+
+.they-say-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.they-say-author-details h4 {
+    font-family: var(--paragraph);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-color-for-headings);
+}
+
+.they-say-author-details h5 {
+    font-family: var(--paragraph);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-color-for-headings);
+}
+
+@media screen and (max-width: 1000px) {
+    .author-tey-say-container {
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Pre-order */
+.author-pre-order {
+    background-color: var(--color-white);
+    padding: 100px 0;
+}
+
+.pre-order-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.author-pre-order img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+
+.author-pre-order h2 {
+    font-family: var(--heading);
+    font-size: 25px;
+    color: var(--primary-color-for-headings);
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.author-pre-order h3 {
+    font-family: var(--heading);
+    font-size: 48px;
+    color: var(--primary-color-for-headings);
+    font-weight: 700;
+    line-height: 53px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.author-pre-order p {
+    font-family: var(--paragraph);
+    font-size: 18px;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 50px;
+}
+
+.pre-order-button {
+    background-color: var(--color-primary-buttons);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: var(--font-oswald) !important;
+}
+
+.pre-order-button:hover {
+    background-color: var(--color-primary-buttons-hover);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1000px) {
+    .author-pre-order {
+        padding: 50px 0;
+    }
+
+    .pre-order-container {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        gap: 20px;
+    }
+
+    .author-pre-order p {
+        margin-bottom: 30px;
+    }
+}
+
+/* About me new */
+.about-me-home-new {
+    background-color: var(--color-gray);
+}
+
+.about-me-home-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 0 100px 0;
+}
+
+.about-me-home-left h2 {
+    font-family: var(--heading);
+    font-size: 48px;
+    color: var(--primary-color-for-headings);
+    font-weight: 500;
+    margin-bottom: 27px;
+}
+
+.about-me-home-left h3 {
+    font-family: var(--heading);
+    font-size: 25px;
+    color: var(--primary-color-for-headings);
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 5px solid var(--primary-color-for-headings);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.about-me-home-left-img {
+    position: relative;
+}
+
+.about-me-home-left-book-img {
+    position: absolute;
+    left: 75%;
+    top: 80%;
+}
+
+.about-me-home-right p {
+    font-family: var(--paragraph);
+    font-size: 20px;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.about-me-home-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-home-right img {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.about-hero-learn-more {
+    background-color: var(--color-primary-buttons);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-oswald) !important;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-me-home-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0 50px 0;
+    }
+
+    .about-me-home-left-img {
+        position: unset;
+    }
+
+    .about-me-home-left-book-img {
+        position: unset;
+        display: none;
+    }
+
+    .about-me-home-left-img img {
+        width: 100%;
+        height: auto;
+    }
+}

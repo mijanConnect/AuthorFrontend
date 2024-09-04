@@ -42,12 +42,12 @@
 
 /* Award about me */
 .award-about-me-container {
-    padding: 100px 5%;
+    padding: 100px 0;
 }
 
 @media screen and (max-width: 800px) {
     .award-about-me-container {
-        padding: 50px 5%;
+        padding: 50px 0;
     }
 }
 
@@ -75,6 +75,17 @@
     border-bottom: 5px solid var(--primary-color-for-headings);
     display: inline-block;
     margin: 0 0 50px 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .award-about-me-container {
+        padding: 50px 0;
+    }
+}
+
+.award-about-me-container-topp{
+    background-color: var(--color-gray);
 }
 
 .award-about-me-image {

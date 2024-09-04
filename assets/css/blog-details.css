@@ -1,8 +1,11 @@
+.blog-details-top-author{
+    background-color: var(--color-gray);
+}
+
 .blog-details-img {
     margin: 0;
     position: relative;
     padding-bottom: 300px;
-    background-color: var(--color-gray);
 }
 
 .blog-details-img img {
@@ -12,7 +15,6 @@
 .blog-details-parent {
     margin-top: -100px;
     position: absolute;
-    padding: 0 10%;
 }
 
 .feb-23-2024 {
@@ -235,4 +237,12 @@
     .sample-post-with{
         margin-bottom: 20px;
     }
+}
+
+.blog-imgggg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
 }

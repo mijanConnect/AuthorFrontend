@@ -1,6 +1,9 @@
-.author-contact-us-containeer {
-    padding: 100px 5%;
+.contact-us-section-top {
     background-color: var(--color-gray);
+}
+
+.author-contact-us-containeer {
+    padding: 100px 0;
     margin: 0;
 }
 
@@ -21,6 +24,7 @@
     color: var(--primary-color-for-headings);
     margin-bottom: 15px;
     display: inline;
+    font-family: var(--paragraph);
 }
 
 .author-contact-us-left h2 {
@@ -28,6 +32,7 @@
     font-weight: 700;
     color: var(--primary-color-for-headings);
     margin-bottom: 20px;
+    font-family: var(--heading);
 }
 
 .contact-details p {
@@ -37,6 +42,7 @@
     border-bottom: 1px solid var(--primary-color-for-headings);
     margin: 0;
     padding: 20px 0;
+    font-family: var(--paragraph);
 }
 
 .author-contact-us-right {
@@ -49,9 +55,9 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 5px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #DADBD6 !important;
+    padding: 10px;
+    border: 1px solid var(--primary-color-for-headings) !important;
+    border-radius: 5px;
 }
 
 .form-control {
@@ -99,6 +105,8 @@ textarea {
 
 .comments-p {
     padding: 10px 0;
+    color: var(--primary-color-for-headings);
+    font-family: var(--paragraph);
 }
 
 .author-contact-us-right button:hover {
@@ -109,7 +117,7 @@ textarea {
     .author-contact-us-containeer {
         display: flex;
         flex-direction: column !important;
-        padding: 50px 5%;
+        padding: 50px 0;
     }
 
     .author-contact-us-left {
