@@ -111,7 +111,7 @@
     justify-content: center;
 }
 
-.swiper-pagination-fraction span{
+.swiper-pagination-fraction span {
     font-size: 18px;
     padding: 5px;
     color: var(--primary-color-for-headings);
