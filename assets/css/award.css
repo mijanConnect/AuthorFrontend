@@ -7,6 +7,26 @@
     position: relative;
 }
 
+.award-winning-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .award-winning-img {
+        flex-direction: column;
+    }
+}
+
+.award-winning-img img {
+    width: 100%;
+    height: auto;
+}
+
 .about-award-play-button {
     position: absolute;
     top: 50%;
@@ -84,7 +104,7 @@
     }
 }
 
-.award-about-me-container-topp{
+.award-about-me-container-topp {
     background-color: var(--color-gray);
 }
 
@@ -112,6 +132,6 @@
     height: auto;
 }
 
-.award-button-play{
+.award-button-play {
     cursor: pointer;
 }

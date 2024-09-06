@@ -54,8 +54,9 @@
 }
 
 .nav-link:hover {
-    color: var(--color-primary-buttons);
+    color: var(--color-white);
     transition: 0.3s;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1200px) {

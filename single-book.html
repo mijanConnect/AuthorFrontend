@@ -54,6 +54,9 @@
                         <a href="./index.html" class="nav-link author-anchor">HOME</a>
                     </li>
                     <li class="nav-item author-list">
+                        <a href="./about.html" class="nav-link author-anchor">About me</a>
+                    </li>
+                    <li class="nav-item author-list">
                         <a href="./books.html" class="nav-link author-anchor">BOOKS</a>
                     </li>
                     <li class="nav-item author-list">
@@ -63,7 +66,7 @@
                         <a href="./store.html" class="nav-link author-anchor">STORE</a>
                     </li>
                     <li class="nav-item author-list">
-                        <a href="./appointment.html" class="nav-link author-anchor">Appointment</a>
+                        <a href="./award.html" class="nav-link author-anchor">Awards</a>
                     </li>
                 </ul>
                 <div class="author-nav-button">
@@ -474,7 +477,7 @@
     </footer>
 
     <!-- Copyright -->
-    <section class="autho-copyright">
+    <!-- <section class="autho-copyright">
         <div class="container">
             <div class="author-copyright">
                 <p>Digital world Copyright © 2024</p>
@@ -482,7 +485,30 @@
                 </d>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Header -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        // when we click on hamburger icon its close 
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 
     <!-- Video-modal -->
     <script>
@@ -507,28 +533,55 @@
         }
     </script>
 
-    <!-- Header -->
+    <!-- Terms-and-Conditions -->
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
+        var modalterms = document.getElementById("myModalTerms");
+        var span1terms = document.getElementsByClassName("close")[1];
 
-        hamburger.addEventListener("click", mobileMenu);
+        var btnterms = document.getElementById("BtnTerms");
 
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
+        btnterms.onclick = function () {
+            modalterms.style.display = "block";
         }
 
-        // when we click on hamburger icon its close 
-        const navLink = document.querySelectorAll(".nav-link");
+        span1terms.onclick = function () {
+            modalterms.style.display = "none";
+        }
 
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
+        window.onclick = function (event) {
+            if (event.target == modalterms) {
+                modalterms.style.display = "none";
+            }
         }
     </script>
+
+    <!-- Modal-Privacy-Policy -->
+    <script>
+        var modalprivacy = document.getElementById("myModalPrivacy");
+        var span1privacy = document.getElementsByClassName("close")[2];
+
+        var btnprivacy = document.getElementById("BtnPrivacy");
+
+        btnprivacy.onclick = function () {
+            modalprivacy.style.display = "block";
+        }
+
+        span1privacy.onclick = function () {
+            modalprivacy.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modalprivacy) {
+                modalprivacy.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

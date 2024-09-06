@@ -1,5 +1,5 @@
 .author-hero-top {
-    background: url(../img/home/hero-1.png) no-repeat center center/cover;
+    background: url(../img/home/Untitled\ design\ \(4\).png) no-repeat center center/cover;
 }
 
 .author-hero {
@@ -17,6 +17,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .hero-content h1 {
@@ -57,7 +59,8 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    font-family: var(--font-oswald) !important;
+    font-family: var(--paragraph) !important;
+    font-weight: 500;
 }
 
 .hero-learn-more:hover {

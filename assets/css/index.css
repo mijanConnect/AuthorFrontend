@@ -2446,9 +2446,16 @@
 .author-pricing-col p {
     font-family: var(--paragraph);
     font-size: 20px;
-    color: #969AA0;
+    color: var(--color-paragraph);
     padding-bottom: 40px;
     padding-top: 10px;
+}
+
+.author-pricing-col h5 {
+    font-family: var(--paragraph);
+    font-size: 17px;
+    color: var(--primary-color-for-headings);
+    padding-bottom: 40px;
 }
 
 
@@ -2508,7 +2515,8 @@
 
 /* What They Say */
 .author-tey-say {
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
+    background-image: linear-gradient(180deg, #ACC8D3 -34%, var(--color-white));
 }
 
 .author-tey-say-container {
@@ -2559,7 +2567,7 @@
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-    font-family: var(--font-oswald) !important;
+    font-family: var(--font-paragrap) !important;
     margin-top: 40px;
 }
 
@@ -2635,6 +2643,18 @@
     }
 }
 
+/* swiper */
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: unset;
+}
+
+.author-carousel-topp-bg {
+    background-color: var(--color-white) !important;
+}
+
 /* Pre-order */
 .author-pre-order {
     background-color: var(--color-white);
@@ -2690,7 +2710,8 @@
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-    font-family: var(--font-oswald) !important;
+    font-family: var(--paragraph) !important;
+    font-weight: 500;
 }
 
 .pre-order-button:hover {
@@ -2716,10 +2737,6 @@
 }
 
 /* About me new */
-.about-me-home-new {
-    background-color: var(--color-gray);
-}
-
 .about-me-home-container {
     display: flex;
     justify-content: space-between;
@@ -2768,6 +2785,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 120px;
 }
 
 .about-me-home-right img {
@@ -2785,8 +2803,9 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    font-family: var(--font-oswald) !important;
     margin-top: 50px;
+    font-family: var(--paragraph) !important;
+    font-weight: 500;
 }
 
 .about-hero-learn-more:hover {
@@ -2816,13 +2835,25 @@
         width: 100%;
         height: auto;
     }
+
+    .about-me-home-right {
+        margin-top: 20px;
+    }
 }
 
 /* Author of the yesr */
 .author-of-the-year {
     background-color: var(--color-white);
-    background-image: linear-gradient(150deg, #ACC8D3 -34%, var(--color-white));
+    background-image: linear-gradient(100deg, #ACC8D3 -34%, var(--color-white));
     padding: 122px 0 0 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .author-of-the-year {
+        padding: 50px 0 0 0;
+    }
+    
 }
 
 .author-of-the-year-container {
@@ -2903,7 +2934,8 @@
 
 /* Achivement */
 .author-achivement {
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
+    background-image: linear-gradient(180deg, #ACC8D3 -34%, var(--color-white));
     padding: 62px 0;
 }
 
@@ -3033,4 +3065,80 @@
         width: 100%;
         height: auto;
     }
+}
+
+/* Books list */
+.author-books-list-top {
+    background-color: var(--color-white);
+    padding: 65px 0;
+}
+
+.author-books-list-top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .author-books-list-top-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .author-books-list-top-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .author-books-list-top-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.author-books-list-top-anchor {
+    background-color: var(--color-gray);
+    padding: 15px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.author-books-list-top-anchor img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.author-books-list-details h2 {
+    font-family: var(--paragraph);
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.author-books-list-details h3 {
+    font-family: var(--heading);
+    font-size: 20px;
+    line-height: 39px;
+    color: var(--primary-color-for-headings);
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.author-books-list-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-books-list-price p {
+    font-family: var(--paragraph);
+    font-size: 19px;
+    line-height: 120%;
+    color: var(--color-primary-buttons);
+    font-weight: 700;
 }

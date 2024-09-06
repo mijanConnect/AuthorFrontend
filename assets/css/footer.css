@@ -118,7 +118,7 @@
     font-family: var(--paragraph) !important;
     text-decoration: none;
     color: var(--color-white) !important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
 }

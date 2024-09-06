@@ -54,6 +54,9 @@
                         <a href="./index.html" class="nav-link author-anchor">HOME</a>
                     </li>
                     <li class="nav-item author-list">
+                        <a href="./about.html" class="nav-link author-anchor">About me</a>
+                    </li>
+                    <li class="nav-item author-list">
                         <a href="./books.html" class="nav-link author-anchor">BOOKS</a>
                     </li>
                     <li class="nav-item author-list">
@@ -63,7 +66,7 @@
                         <a href="./store.html" class="nav-link author-anchor">STORE</a>
                     </li>
                     <li class="nav-item author-list">
-                        <a href="./appointment.html" class="nav-link author-anchor">Appointment</a>
+                        <a href="./award.html" class="nav-link author-anchor">Awards</a>
                     </li>
                 </ul>
                 <div class="author-nav-button">
@@ -360,7 +363,7 @@
     </footer>
 
     <!-- Copyright -->
-    <section class="autho-copyright">
+    <!-- <section class="autho-copyright">
         <div class="container">
             <div class="author-copyright">
                 <p>Digital world Copyright © 2024</p>
@@ -368,74 +371,7 @@
                 </d>
             </div>
         </div>
-    </section>
-
-    <!-- Video-modal -->
-    <script>
-        //  About World Book Hone
-        var modal = document.getElementById("myModalVideoHome");
-        var span1 = document.getElementsByClassName("close")[0];
-
-        var btn = document.getElementById("videoBtnHome");
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span1.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-    <!-- Video-Terms-and-Conditions -->
-    <script>
-        var modalterms = document.getElementById("myModalTerms");
-        var span1terms = document.getElementsByClassName("close")[1];
-
-        var btnterms = document.getElementById("BtnTerms");
-
-        btnterms.onclick = function () {
-            modalterms.style.display = "block";
-        }
-
-        span1terms.onclick = function () {
-            modalterms.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modalterms) {
-                modalterms.style.display = "none";
-            }
-        }
-    </script>
-
-    <!-- Modal-Privacy-Policy -->
-    <script>
-        var modalprivacy = document.getElementById("myModalPrivacy");
-        var span1privacy = document.getElementsByClassName("close")[2];
-
-        var btnprivacy = document.getElementById("BtnPrivacy");
-
-        btnprivacy.onclick = function () {
-            modalprivacy.style.display = "block";
-        }
-
-        span1privacy.onclick = function () {
-            modalprivacy.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modalprivacy) {
-                modalprivacy.style.display = "none";
-            }
-        }
-    </script>
+    </section> -->
 
     <!-- Header -->
     <script>
@@ -460,59 +396,55 @@
         }
     </script>
 
-    <!-- Swiper js slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- swoper for award -->
+    <!-- Terms-and-Conditions -->
     <script>
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                "@0.00": {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                "@0.75": {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                "@1.00": {
-                    slidesPerView: 6,
-                    spaceBetween: 40,
-                },
-                "@1.50": {
-                    slidesPerView: 8,
-                    spaceBetween: 50,
-                },
-            },
-        });
+        var modalterms = document.getElementById("myModalTerms");
+        var span1terms = document.getElementsByClassName("close")[0];
+
+        var btnterms = document.getElementById("BtnTerms");
+
+        btnterms.onclick = function () {
+            modalterms.style.display = "block";
+        }
+
+        span1terms.onclick = function () {
+            modalterms.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modalterms) {
+                modalterms.style.display = "none";
+            }
+        }
     </script>
 
-    <!-- Swiper for reviews -->
+    <!-- Modal-Privacy-Policy -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-            },
-        });
+        var modalprivacy = document.getElementById("myModalPrivacy");
+        var span1privacy = document.getElementsByClassName("close")[1];
+
+        var btnprivacy = document.getElementById("BtnPrivacy");
+
+        btnprivacy.onclick = function () {
+            modalprivacy.style.display = "block";
+        }
+
+        span1privacy.onclick = function () {
+            modalprivacy.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modalprivacy) {
+                modalprivacy.style.display = "none";
+            }
+        }
     </script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
