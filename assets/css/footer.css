@@ -72,10 +72,10 @@
 }
 
 .footer-middle h1 {
-    font-family: var(--font-oswald);
+    font-family: var(--paragraph);
     text-decoration: none;
     color: var(--color-white);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -100,10 +100,10 @@
 }
 
 .footer-right h1 {
-    font-family: var(--font-oswald);
+    font-family: var(--paragraph);
     text-decoration: none;
     color: var(--color-white);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     margin-bottom: 10px;
 }

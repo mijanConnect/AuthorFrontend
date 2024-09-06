@@ -105,32 +105,33 @@
         </div>
     </section>
 
-    <!-- Swiper -->
-    <section class="slid-slid">
-        <div class="1234">
-            <h1>This is heading</h1>
-        </div>
-        <div class="swiper mySwiper swiper3 mySwiper3">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                    <h3>Electrifying Nature</h3>
+    <!-- ================ swip ================ -->
+    <section class="about-awards-winning">
+        <div class="container">
+            <div class="about-awards-winning-first">
+                <div class="about-awards-winning-left">
+                    <h1>Awards Winning</h1>
+                    <h2>The Award I Received</h2>
+                    <p>"“A Brief History of a Perfect Future” presents us with a rare gift in this era of pervasive
+                        negativity, anonymous grousing, and divisiveness. It offers a positive and optimistic view
+                        of our future,</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                    <h3>Electrifying Nature</h3>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                    <h3>Electrifying Nature</h3>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                    <h3>Electrifying Nature</h3>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                    <h3>Electrifying Nature</h3>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -461,6 +462,30 @@
                 modalprivacy.style.display = "none";
             }
         }
+    </script>
+
+    <!-- swiper for revuew bottom -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                // when window width is <= 499px
+                299: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 50
+                },
+                // when window width is <= 999px
+                999: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 50
+                }
+            }
+        });
     </script>
 
     <!-- Bootstrap -->

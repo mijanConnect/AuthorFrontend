@@ -1,3 +1,200 @@
+.award-all-top {
+    padding: 50px 0;
+    background-color: var(--color-gray);
+}
+
+.award-all-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    .award-all-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .award-all-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.award-all-single {
+    padding: 22px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+}
+
+.award-all-program-img {
+    width: 100%;
+    height: auto;
+}
+
+.award-all-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.award-all-title h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--primary-color-for-headings);
+    line-height: 38px;
+    font-family: var(--heading);
+}
+
+.award-all-single p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--primary-color-for-headings);
+    line-height: 20px;
+    color: var(--color-paragraph);
+    font-family: var(--paragraph);
+    margin-top: 5px;
+}
+
+/* .Milestones */
+.milestones-top {
+    padding: 100px 0;
+    background-color: #E6F6F4;
+}
+
+.milestones-container-top-heading {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.milestones-container-top-heading h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary-color-for-headings);
+    line-height: 32px;
+    font-family: var(--heading);
+    text-align: center;
+}
+
+.milestones-container-top-heading h3 {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--primary-color-for-headings);
+    line-height: 53px;
+    font-family: var(--heading);
+    text-align: center;
+    margin-top: 5px;
+    border-bottom: 5px solid var(--primary-color-for-headings);
+    display: inline-block;
+}
+
+.milestones-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .milestones-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .milestones-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .milestones-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.milestones-items {
+    background-color: var(--color-white);
+    border-right: 10px solid var(--primary-color-for-headings);
+    border-bottom: 10px solid var(--primary-color-for-headings);
+    height: 225px;
+    position: relative;
+}
+
+.milestones-items-gray {
+    background-color: var(--color-gray);
+    width: 90px;
+    height: 90px;
+    float: right;
+}
+
+.milestones-items-text {
+    bottom: 0;
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.milestones-items-text h4 {
+    font-size: 33px;
+    font-weight: 800;
+    color: var(--primary-color-for-headings);
+    line-height: 27px;
+    font-family: var(--paragraph);
+}
+
+.milestones-items-text h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color-for-headings);
+    line-height: 27px;
+    font-family: var(--heading);
+    margin-top: 5px;
+}
+
+/* Readers count */
+.reader-count-container {
+    background: url(../img/award/bg-12.png) no-repeat center center/cover;
+    height: 475px;
+    position: relative;
+}
+
+.reader-count-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.reader-count-details h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--primary-color-for-headings);
+    font-family: var(--heading);
+    text-align: center;
+}
+
+.reader-count-details p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-paragraph);
+    font-family: var(--paragraph);
+    margin-top: 17px;
+}
+
+.reader-count-star {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+/* Old code */
 /* award video */
 .about-me-award-video {
     background-color: var(--color-white);

@@ -57,19 +57,15 @@
 }
 
 .about-awards-winning-first {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     gap: 100px;
-    align-items: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 @media screen and (max-width: 1000px) {
     .about-awards-winning-first {
-        flex-direction: column;
-        gap: 45px;
-        align-items: flex-start;
-        margin-bottom: 50px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -192,8 +188,8 @@
     color: var(--color-paragraph);
     font-family: var(--paragraph);
     line-height: 27px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .award-winnig-bottom {
@@ -424,6 +420,14 @@
     margin-bottom: 15px;
 }
 
+.award-button-play-about {
+    border-radius: 50%;
+}
+
+.about-audio-control{
+    width: 100%;
+}
+
 .author-interview-left h3 {
     font-size: 48px;
     font-weight: 500;
@@ -442,12 +446,36 @@
     color: var(--color-paragraph);
     line-height: 25px;
 }
+/* 
+.interview-audio-player{
+    cursor: pointer;
+} */
+
+.interview-audio-player img{
+    width: 40px;
+    height: 40px;
+}
+
+.interview-audio-title-bg {
+    background-color: var(--color-white);
+    padding: 40px 40px 20px 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.interview-audio-title-bg p{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--paragraph);
+    color: var(--color-paragraph);
+    line-height: 25px;
+}
 
 .interview-audio-title-container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .interview-audio-title-container h4 {
@@ -463,4 +491,11 @@
         align-items: center;
         gap: 50px;
     }
+}
+
+/* Certificate-slider-img */
+.certificate-slider-img {
+    padding-bottom: 40px;
+    width: 100% !important;
+    height: auto !important;
 }

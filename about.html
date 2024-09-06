@@ -114,7 +114,8 @@
                     <h3>Dr Denis</h3>
                     <div class="about-me-home-left-img">
                         <img src="./assets/img/home/about-me-new.png" alt="author">
-                        <img src="./assets/img/home/about-me-book-1.png" class="about-me-home-left-book-img" alt="book">
+                        <img src="./assets/img/about-me/about-book-mockup.png" class="about-me-home-left-book-img"
+                            alt="book">
                     </div>
                 </div>
                 <div class="about-me-home-right">
@@ -124,7 +125,7 @@
                         Nephrology Physicians, P.A., and is a Clinical Professor at the University of Kansas School of
                         Medicine. He holds certifications in Internal Medicine and Nephrology, with active medical
                         licenses in Kansas, Nebraska, and Missouri.</p>
-                    <img src="./assets/img/home/about-me-book-2.png" alt="book">
+                    <img src="./assets/img/about-me/about-banner.png" alt="book">
                     <p>Dr. Ross is also an accomplished author. His book, "The Perfect Match," was awarded 1st place in
                         the 2022 Pencraft Awards for Literary Excellence, highlighting his talent not only in medicine
                         but also in literature. Beyond his professional and literary achievements, he enjoys playing
@@ -160,28 +161,6 @@
     </section>
 
     <!-- ================ Awards Winning ================ -->
-    <!-- <section class="about-awards-winning-top">
-        <div class="about-awards-winning">
-            <div class="container">
-                <div class="about-awards-winning-first">
-                    <div class="about-awards-winning-left">
-                        <h1>Awards Winning</h1>
-                        <h2>The Award I Received</h2>
-                        <p>"“A Brief History of a Perfect Future” presents us with a rare gift in this era of pervasive
-                            negativity, anonymous grousing, and divisiveness. It offers a positive and optimistic view
-                            of our future,</p>
-                    </div>
-                    <div class="about-awards-winning-right">
-                        <div class="about-awards-winning-right-img">
-                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
-                        </div>
-                        <a href="./store.html" class="about-hero-learn-more">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="about-awards-winning-top">
         <div class="about-awards-winning">
             <div class="container">
@@ -192,12 +171,28 @@
                         <p>"“A Brief History of a Perfect Future” presents us with a rare gift in this era of pervasive
                             negativity, anonymous grousing, and divisiveness. It offers a positive and optimistic view
                             of our future,</p>
+                        <a href="./store.html" class="about-hero-learn-more">VIEW ALL</a>
                     </div>
-                    <div class="about-awards-winning-right">
-                        <div class="about-awards-winning-right-img">
-                            <img src="./assets/img/home/auther--wwwww.png" alt="Certificate">
+                    <div class="swiper mySwiper swiper5 mySwiper5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/home/auther--wwwww.png" class="certificate-slider-img"
+                                    alt="Certificate">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/home/auther--wwwww.png" class="certificate-slider-img"
+                                    alt="Certificate">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/home/auther--wwwww.png" class="certificate-slider-img"
+                                    alt="Certificate">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/home/auther--wwwww.png" class="certificate-slider-img"
+                                    alt="Certificate">
+                            </div>
                         </div>
-                        <a href="./store.html" class="about-hero-learn-more">LEARN MORE</a>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -244,15 +239,73 @@
                     <h2>Interview</h2>
                     <h3>Explore Podcast</h3>
                     <p>Simple!. I have cared for patients with kidney failure for over 40 years. Unless you or a family
-                        member or a friend has had kidney failure, you probably wouldn’t </p>
+                        member or a friend has had kidney failure, you probably wouldn’t The Perfect MatchThe Perfect
+                        MatchTo educate people unfamiliar with kidney failure and writing about this condition as a
+                        physician would likely put the reader to sleep but writing a fictional medical thriller that is
+                        entertaining and educational</p>
                 </div>
                 <div class="author-interview-right">
-                    <div class="interview-audio-title-container">
-                        <img src="./assets/img/home/interview-equlizer.png" alt="img">
-                        <h4>The Perfect Match</h4>
-                    </div>
-                    <div class="intreview-audio-button">
-                        <img src="./assets/img/home/intreview-button.png" alt="img">
+                    <div class="interview-audio-title-bg">
+                        <div class="interview-audio-title-container">
+                            <div class="interview-audio-player">
+                                <button id="videoBtnHome" class="award-button-play award-button-play-about">
+                                    <img src="./assets/img/home/intreview-button.png" alt="img">
+                                </button>
+                            </div>
+                            <div class="interview-audio-title-details">
+                                <p>Interview :01 ,The Perfect Match</p>
+                                <h4>The Perfect Match</h4>
+                            </div>
+                            <div id="myModalVideoHome" class="modal">
+                                <div class="modal-content">
+                                    <span id="spanVideoHome" class="close">&times;</span>
+                                    <audio controls class="about-audio-control">
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interview-audio-title-container">
+                            <div class="interview-audio-player">
+                                <button id="videoBtnHome" class="award-button-play award-button-play-about">
+                                    <img src="./assets/img/home/intreview-button.png" alt="img">
+                                </button>
+                            </div>
+                            <div class="interview-audio-title-details">
+                                <p>Interview :01 ,The Perfect Match</p>
+                                <h4>The Perfect Match</h4>
+                            </div>
+                            <div id="myModalVideoHome" class="modal">
+                                <div class="modal-content">
+                                    <span id="spanVideoHome" class="close">&times;</span>
+                                    <audio controls class="about-audio-control">
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interview-audio-title-container">
+                            <div class="interview-audio-player">
+                                <button id="videoBtnHome" class="award-button-play award-button-play-about">
+                                    <img src="./assets/img/home/intreview-button.png" alt="img">
+                                </button>
+                            </div>
+                            <div class="interview-audio-title-details">
+                                <p>Interview :01 ,The Perfect Match</p>
+                                <h4>The Perfect Match</h4>
+                            </div>
+                            <div id="myModalVideoHome" class="modal">
+                                <div class="modal-content">
+                                    <span id="spanVideoHome" class="close">&times;</span>
+                                    <audio controls class="about-audio-control">
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,23 +320,11 @@
                 <div class="swiper mySwiper swiper3 mySwiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
+                            <img src="./assets/img/about-me/1.png" class="books-slider-img" alt="award">
                             <h3>Electrifying Nature</h3>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                            <h3>Electrifying Nature</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                            <h3>Electrifying Nature</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
-                            <h3>Electrifying Nature</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/slider-book-1.png" class="books-slider-img" alt="award">
+                            <img src="./assets/img/about-me/2.png" class="books-slider-img" alt="award">
                             <h3>Electrifying Nature</h3>
                         </div>
                     </div>
@@ -569,6 +610,56 @@
         window.onclick = function (event) {
             if (event.target == modalprivacy) {
                 modalprivacy.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- swiper for revuew bottom -->
+    <script>
+        var swiper5 = new Swiper(".mySwiper5", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is <= 499px
+                299: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 50
+                },
+                // when window width is <= 999px
+                999: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 50
+                }
+            }
+        });
+    </script>
+
+    <!-- Achivement Video Modal -->
+    <script>
+        var modal = document.getElementById("myModalVideoHome");
+        var span1 = document.getElementsByClassName("close")[0];
+
+        var btn = document.getElementById("videoBtnHome");
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span1.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
         }
     </script>

@@ -2611,6 +2611,7 @@
     color: var(--color-paragraph);
     font-weight: 400;
     padding: 20px 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .they-say-author {
@@ -2853,7 +2854,7 @@
     .author-of-the-year {
         padding: 50px 0 0 0;
     }
-    
+
 }
 
 .author-of-the-year-container {
@@ -3113,7 +3114,7 @@
 .author-books-list-details h2 {
     font-family: var(--paragraph);
     font-size: 20px;
-    color: #000;
+    color: var(--color-primary-buttons);
     font-weight: 400;
     margin-top: 30px;
 }

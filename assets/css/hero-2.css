@@ -1,5 +1,9 @@
 .hero-2-top {
-    background: url(../img/home/hero-2.jpg) no-repeat center center/cover;
+    background: url(../img/books/hero-2.png) no-repeat center center/cover;
+}
+
+.hero-2-top-books {
+    background: url(../img/books/book-hero.png) no-repeat center center/cover;
 }
 
 .author-hero-2 {
