@@ -2147,6 +2147,7 @@
     color: #969AA0;
     font-family: var(--paragraph);
     line-height: 30px;
+    margin-bottom: 50px;
 }
 
 /* About Me */
@@ -3142,4 +3143,110 @@
     line-height: 120%;
     color: var(--color-primary-buttons);
     font-weight: 700;
+}
+
+/* Testimonial New */
+.testimonials-new {
+    background-color: var(--color-gray);
+    padding: 50px 0;
+}
+
+.testimonials-new-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.testimonials-new-single-items {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    .testimonials-new-single-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.testimonials-new-items-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.testimonials-new-star-contain {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.testimonials-new-star {
+    color: rgb(255, 187, 0);
+}
+
+.testimonials-new-items-description h2 {
+    font-family: var(--paragraph);
+    font-size: 25px;
+    color: var(--primary-color-for-headings);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonials-new-items-description p {
+    font-family: var(--paragraph);
+    font-size: 18px;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.testimonials-new-star-contain h3 {
+    font-family: var(--paragraph);
+    font-size: 18px;
+    color: var(--color-paragraph);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/* se more */
+.hideContent {
+    overflow: hidden;
+    line-height: 1em;
+    height: 3em;
+}
+
+.showContent {
+    line-height: 1em;
+    height: auto;
+}
+
+.showContent {
+    height: auto;
+}
+
+.show-more {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.content-see-more {
+    text-align: left !important;
+    padding: 0;
+}
+
+.show-more{
+    color: blue;
+    cursor: pointer;
+    font-family: var(--paragraph);
+    padding-bottom: 15px;
 }

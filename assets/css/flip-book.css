@@ -150,3 +150,33 @@
     color: white;
     text-decoration: none;
 }
+
+/* Flip-book-new */
+.flip-book-learn-more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-book-learn-more {
+    background-color: var(--color-primary-buttons);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--paragraph) !important;
+    font-weight: 500;
+}
+
+.flip-book-learn-more:hover {
+    background-color: var(--color-primary-buttons-hover);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.canvas-flip{
+    margin-bottom: 50px;
+}
